@@ -38,10 +38,10 @@ size_t partition(int *array, size_t size, size_t lb, size_t ub)
 	pivot = array[ub];
 	while (j < ub)
 	{
-		if (array[j] < pivot && array[i] != array[j])
+		if (array[j] < pivot)
 		{
 			i++;
-			if (i != j)
+			if (i != j && array[i] != array[j])
 			{
 				swap_el(&array[j], &array[i]);
 				print_array(array, size);
