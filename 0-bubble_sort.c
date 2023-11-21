@@ -5,20 +5,7 @@
  * @size: size of the array
  */
 
-/**
- * swap_el - swaps the values of two pointers in an array
- * @a: pointer a
- * @b: pointer b
- */
-void swap_el(int *a, int *b)
-{
-	int tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
-}
-void bubble_sort(int *arr, size_t sz)
+void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
 	int swapped;
@@ -35,7 +22,7 @@ void bubble_sort(int *arr, size_t sz)
 				swapped = 1;
 			}
 		}
-		if (swapped == 0)
+		if (!swapped)
 			break;
 	}
 }
