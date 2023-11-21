@@ -77,7 +77,7 @@ void quick_sort_recurs(int *array, size_t size, size_t lb, size_t ub)
 
 		if (lb < piv_pos)
 			quick_sort_recurs(array, size, lb, piv_pos - 1);
-		if (piv_pos + 1 <= ub)
+		if (piv_pos + 1 < ub)
 			quick_sort_recurs(array, size, piv_pos + 1, ub);
 	}
 }
