@@ -18,7 +18,7 @@ void swap_el(int *a, int *b)
 	*a = *b;
 	*b = tmp;
 }
-void bubble_sort(int *array, size_t size)
+void bubble_sort(int *arr, size_t sz)
 {
 	size_t i, j;
 	int swapped;
