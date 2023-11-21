@@ -50,7 +50,7 @@ size_t partition(int *array, size_t size, size_t lb, size_t ub)
 		j++;
 	}
 	i++;
-	if (i != j && array[i] != array[j])
+	if (array[i] != pivot)
 	{
 		swap_el(&array[i], &array[ub]);
 		print_array(array, size);
