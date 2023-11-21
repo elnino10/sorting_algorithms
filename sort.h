@@ -20,7 +20,8 @@ typedef struct listint_s
 
 /*quick_sort*/
 void quick_sort(int *array, size_t size);
-size_t partition(int *array, size_t lb, size_t ub);
+size_t partition(int *array, size_t size, size_t lb, size_t ub);
+void quick_sort_recurs(int *array, size_t size, size_t lb, size_t ub);
 
 /*bubble_sort*/
 void bubble_sort(int *array, size_t size);
