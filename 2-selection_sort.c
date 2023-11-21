@@ -36,3 +36,19 @@ void selection_sort(int *array, size_t size)
 		i++;
 	}
 }
+
+/**
+ * swap_el - swaps two integers
+ * @a: integer to be swapped
+ * @b: integer to be swapped
+ *
+ * Return: nothing
+ */
+void swap_el(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
