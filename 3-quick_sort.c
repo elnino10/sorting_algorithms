@@ -94,7 +94,7 @@ void quick_sort(int *array, size_t size)
 {
 	size_t lb = 0, ub = size - 1, piv_pos;
 
-	if (!array || lb >= ub)
+	if (!array || size < 2)
 		return;
 
 	piv_pos = partition(array, size, lb, ub);
