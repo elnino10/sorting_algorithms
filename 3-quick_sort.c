@@ -92,15 +92,15 @@ void quick_sort_recurs(int *array, size_t size, size_t lb, size_t ub)
  */
 void quick_sort(int *array, size_t size)
 {
-	size_t lb = 0, ub = size - 1, piv_pos;
+	size_t lb = 0, ub = size - 1;
 
 	if (!array || size < 2)
 		return;
 
-	piv_pos = partition(array, size, lb, ub);
+	/*piv_pos = partition(array, size, lb, ub);*/
 
-	if (lb < piv_pos)
+	/*if (lb < piv_pos)*/
 		quick_sort_recurs(array, size, lb, ub);
-	if (piv_pos + 1 <= ub)
+	/*if (piv_pos + 1 <= ub)*/
 		quick_sort_recurs(array, size, lb, ub);
 }
