@@ -97,10 +97,5 @@ void quick_sort(int *array, size_t size)
 	if (!array || size < 2)
 		return;
 
-	/*piv_pos = partition(array, size, lb, ub);*/
-
-	/*if (lb < piv_pos)*/
-		quick_sort_recurs(array, size, lb, ub);
-	/*if (piv_pos + 1 <= ub)*/
-		quick_sort_recurs(array, size, lb, ub);
+	quick_sort_recurs(array, size, lb, ub);
 }
