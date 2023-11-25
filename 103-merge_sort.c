@@ -58,7 +58,7 @@ void merge_sort_split(int *array, size_t size, size_t l, size_t r)
 void merge_sorted_arrays(int *array, size_t size, size_t l, size_t m, size_t r)
 {
 	int *arr_copy;
-	size_t i, j, k, a;
+	size_t i, j, k;
 
 	arr_copy = malloc(sizeof(*arr_copy * size));
 	if (!arr_copy)
