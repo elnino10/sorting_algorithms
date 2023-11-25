@@ -35,6 +35,12 @@ void selection_sort(int *array, size_t size);
 /*shell_sort*/
 void shell_sort(int *array, size_t size);
 
+/*merge_sort*/
+void merge_sort(int *array, size_t size);
+void merge_sort_split(int *array, size_t size, size_t l, size_t r);
+void merge_sorted_arrays(
+int *array, size_t size, size_t l, size_t m, size_t r);
+
 /*helper_functions*/
 void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
